@@ -3,7 +3,7 @@
 	--uia-red-dark: #7f1322;
 	--bg: #ffffff;
 	--text: #1f1f1f;
-	--text-muted: #666666;
+	--text-muted: #595959;
 	--border: #e6e6e6;
 	--shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
 	--shadow-hover: 0 10px 28px rgba(0, 0, 0, 0.1);
@@ -34,6 +34,8 @@ nav ul {
 	margin: 0;
 	padding: 1rem 1.5rem;
 	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 nav a {
@@ -42,6 +44,21 @@ nav a {
 	font-size: 1.25rem;
 	text-decoration: none;
 	letter-spacing: -0.02em;
+}
+
+.nav-links {
+	display: flex;
+	gap: 1.5rem;
+}
+
+.nav-links a {
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.ambisjon,
+.medlemmer {
+	scroll-margin-top: 80px;
 }
 
 .hero {
@@ -71,6 +88,39 @@ nav a {
 	font-size: 1.1rem;
 	line-height: 1.6;
 	color: rgba(255, 255, 255, 0.88);
+}
+
+.ambisjon {
+	max-width: 1120px;
+	margin: 0 auto;
+	padding: 4.5rem 1.5rem 0;
+	text-align: center;
+}
+
+.ambisjon h2 {
+	margin: 0;
+	font-size: 2rem;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+}
+
+.ambisjon h2::after {
+	content: "";
+	display: block;
+	width: 56px;
+	height: 4px;
+	margin: 0.9rem auto 0;
+	border-radius: 999px;
+	background: var(--uia-red);
+}
+
+.ambisjon p {
+	margin: 2rem auto 0;
+	max-width: 720px;
+	text-align: left;
+	color: var(--text-muted);
+	font-size: 1rem;
+	line-height: 1.7;
 }
 
 .medlemmer {
