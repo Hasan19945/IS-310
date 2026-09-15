@@ -26,8 +26,8 @@
 	:root {
 		--color-bg: #1a1d24;
 		--color-bg-panel: #23262f;
-		--color-text: #e4e2dc;
-		--color-text-muted: #c7c4bd;
+		--color-text: #ffffff;
+		--color-text-muted: #ffffff;
 		--color-border: #e4e2dc;
 
 		--bevel-light: #3a3e4a;
@@ -61,8 +61,8 @@
 :root[data-theme="dark"] {
 	--color-bg: #1a1d24;
 	--color-bg-panel: #23262f;
-	--color-text: #e4e2dc;
-	--color-text-muted: #c7c4bd;
+	--color-text: #ffffff;
+	--color-text-muted: #ffffff;
 	--color-border: #e4e2dc;
 
 	--bevel-light: #3a3e4a;
