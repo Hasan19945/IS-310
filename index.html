@@ -2,6 +2,16 @@
 <html lang="no">
 <head>
     <meta charset="UTF-8">
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem("theme-preference");
+                if (t === "light" || t === "dark") {
+                    document.documentElement.setAttribute("data-theme", t);
+                }
+            } catch (e) {}
+        })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/index.css" />
     <title>IS-310</title>
@@ -16,6 +26,11 @@
                 <li class="nav-links">
                     <a href="#ambisjon">Ambisjoner</a>
                     <a href="#medlemmer">Medlemmer</a>
+                </li>
+                <li class="theme-switch" role="group" aria-label="Fargetema">
+                    <button type="button" class="theme-btn" data-theme-choice="light" aria-pressed="false">Lys</button>
+                    <button type="button" class="theme-btn" data-theme-choice="dark" aria-pressed="false">Mørk</button>
+                    <button type="button" class="theme-btn" data-theme-choice="system" aria-pressed="true">System</button>
                 </li>
             </ul>
         </nav>
@@ -252,5 +267,46 @@
             <p><a href="#top">Til toppen ↑</a></p>
         </div>
     </footer>
+
+    <script>
+        (function () {
+            var STORAGE_KEY = "theme-preference";
+            var root = document.documentElement;
+            var buttons = document.querySelectorAll(".theme-btn");
+
+            function currentChoice() {
+                var stored;
+                try {
+                    stored = localStorage.getItem(STORAGE_KEY);
+                } catch (e) {
+                    stored = null;
+                }
+                return stored === "light" || stored === "dark" ? stored : "system";
+            }
+
+            function apply(choice) {
+                if (choice === "light" || choice === "dark") {
+                    root.setAttribute("data-theme", choice);
+                } else {
+                    root.removeAttribute("data-theme");
+                }
+                buttons.forEach(function (btn) {
+                    btn.setAttribute("aria-pressed", String(btn.dataset.themeChoice === choice));
+                });
+            }
+
+            apply(currentChoice());
+
+            buttons.forEach(function (btn) {
+                btn.addEventListener("click", function () {
+                    var choice = btn.dataset.themeChoice;
+                    try {
+                        localStorage.setItem(STORAGE_KEY, choice);
+                    } catch (e) {}
+                    apply(choice);
+                });
+            });
+        })();
+    </script>
 </body>
 </html>
