@@ -61,6 +61,28 @@ nav a {
 	scroll-margin-top: 80px;
 }
 
+.video {
+	padding: 2.5rem 1.5rem;
+}
+
+.video-ramme {
+	width: 100%;
+	max-width: 1120px;
+	margin: 0 auto;
+	aspect-ratio: 16 / 9;
+	overflow: hidden;
+	border-radius: 12px;
+	box-shadow: var(--shadow);
+}
+
+.video-ramme iframe {
+	width: 100%;
+	height: 100%;
+	border: 0;
+	display: block;
+}
+
+
 .hero {
 	width: 100%;
 }
