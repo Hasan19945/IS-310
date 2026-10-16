@@ -6,14 +6,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="styles/index.css" />
     <title>IS-310</title>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="/index.html">Gruppe 8</a></li>
+                <li><a href="index.html">Gruppe 8</a></li>
+                <li class="nav-links">
+                    <a href="#ambisjon">Ambisjoner</a>
+                    <a href="#medlemmer">Medlemmer</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -26,74 +30,42 @@
             </div>
         </section>
 
-        <section class="medlemmer">
+        <section class="medlemmer" id="medlemmer">
             <h2>Medlemmer</h2>
 
             <div class="medlem-grid">
                 <article class="medlem">
                     <div class="medlem-bilde">
-                        <img src="https://placehold.co/300x300" alt="Profilbilde av Medlem 1"></div>
+                        <img src="https://placehold.co/300x300" alt="Profilbilde av Adam Elmasry"></div>
                     <div class="medlem-info">
-                        <h3>Medlem 1</h3>
+                        <h3>Adam Elmasry</h3>
                         <p> 
-                            
                             Mitt navn er Adam Elmasry 35 år og far for 2 barn. Jeg har studert økonomi og jobber som frilanser regnskapsfører, og i
                             tillegg til det kjører jeg også drosje noe som har gitt meg gode erfaring med ansvar, struktur og samarbeid i hektiske
-                            miljøer. Igjennom nåværende studiet og egne prosjekter, har jeg også utviklet ferdigheter innen C#, HTML, CSS, Docker,
+                            miljøer. 
+                        </p>
+                        <p>
+                            Igjennom nåværende studiet og egne prosjekter, har jeg også utviklet ferdigheter innen C#, HTML, CSS, Docker,
                             Mariadb, GitHub og React, og jeg trives godt med å utforske nye teknologier og løsninger.
+                        </p>
+                        <p>
                             På fritiden liker jeg å være aktiv, og jeg bruker mye tid på å leke med mine barn og spille FIFA. Jeg er sosial og liker
                             å være en del av et lag, både på fritiden og i prosjektsammenheng.
-                            </p>
+                        </p>
                        <div class="medlem-lenker">
-                            <a class="btn" href="#" target="_blank" rel="noopener noreferrer">
+                            <a class="btn" href="https://github.com/Adam-Elmasry-GitHub" target="_blank" rel="noopener noreferrer">
                                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.73.5.9 5.33.9 11.6c0 4.98 3.23 9.2 7.72 10.69.56.1.77-.24.77-.54 0-.27-.01-1.15-.02-2.09-3.14.68-3.8-1.35-3.8-1.35-.51-1.31-1.25-1.66-1.25-1.66-1.02-.7.08-.68.08-.68 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.39-1.22.71-1.5-2.51-.29-5.15-1.26-5.15-5.6 0-1.24.44-2.25 1.16-3.04-.12-.29-.5-1.45.11-3.02 0 0 .95-.3 3.11 1.16a10.8 10.8 0 0 1 5.66 0c2.16-1.46 3.11-1.16 3.11-1.16.61 1.57.23 2.73.11 3.02.72.79 1.16 1.8 1.16 3.04 0 4.35-2.64 5.31-5.16 5.59.4.35.76 1.03.76 2.09 0 1.51-.01 2.72-.01 3.09 0 .3.2.65.78.54A11.1 11.1 0 0 0 23.1 11.6C23.1 5.33 18.27.5 12 .5Z"/></svg>
                                 GitHub 
                             </a>
-                            <a class="btn" href="#" target="_blank" rel="noopener noreferrer">
+                            <a class="btn" href="https://www.linkedin.com/in/adam-elmasry-230838159/" target="_blank" rel="noopener noreferrer">
                                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.62 0 4.29 2.38 4.29 5.48v6.26ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
                                 LinkedIn
                             </a>
-                            <a class="btn" href="mailto:medlem1@example.com">
+                            <a class="btn" href="mailto:adam.almasry2014@gmail.com">
                                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.2.3 7.36 5.62a.7.7 0 0 0 .88 0L19.8 5.8a.6.6 0 0 0-.36-1.05H4.56a.6.6 0 0 0-.36 1.05Z"/></svg>
                                 Epost
                             </a>
-                            <a class="btn" href="tel:+4700000000">
-                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.7 5.1 6.5 6.5l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1.1.5 1.1 1.1V20c0 .6-.5 1.1-1.1 1.1C10.6 21.1 2.9 13.4 2.9 3.9c0-.6.5-1.1 1.1-1.1h3.4c.6 0 1.1.5 1.1 1.1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8Z"/></svg>
-                                Telefon
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="medlem">
-                    <div class="medlem-bilde">
-                        <img src="marie.jpg" alt="Profilbilde av Marie Hesseberg">
-                    </div>
-                    <div class="medlem-info">
-                        <h3>Marie Hesseberg</h3>
-                        <p>
-                            Jeg heter Marie Hesseberg, er 26 år og kommer fra Haugesund. Jeg studerer tredje året på bachelor i IT og informasjonssystemer ved Universitetet i Agder.
-                            <br><br>
-                            Gjennom studiet har jeg fått erfaring med flere områder innen systemutvikling og har blitt spesielt interessert i fullstackutvikling. Jeg liker å se hvordan de forskjellige delene av et system henger sammen, fra grensesnitt og brukeropplevelse til backend, databaser og datahåndtering.
-                            <br><br>
-                            Jeg er også opptatt av universell utforming og synes det er viktig at digitale løsninger ikke bare fungerer teknisk, men også er enkle og tilgjengelige å bruke. I tillegg har jeg fått interesse for databaser gjennom videregående databasesystemer, hvor jeg fikk jobbe mer med strukturering og håndtering av data.
-                            <br><br>
-                            Høsten 2026 har jeg praksis hos Mandalselva Elveeigarlag, hvor jeg er med på å utvikle EasyFisk. Prosjektet gir meg mulighet til å jobbe med en større løsning gjennom flere deler av utviklingsprosessen.
-                        </p>
-                        <div class="medlem-lenker">
-                            <a class="btn" href="https://github.com/MarieHesseberg" target="_blank" rel="noopener noreferrer">
-                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.73.5.9 5.33.9 11.6c0 4.98 3.23 9.2 7.72 10.69.56.1.77-.24.77-.54 0-.27-.01-1.15-.02-2.09-3.14.68-3.8-1.35-3.8-1.35-.51-1.31-1.25-1.66-1.25-1.66-1.02-.7.08-.68.08-.68 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.39-1.22.71-1.5-2.51-.29-5.15-1.26-5.15-5.6 0-1.24.44-2.25 1.16-3.04-.12-.29-.5-1.45.11-3.02 0 0 .95-.3 3.11 1.16a10.8 10.8 0 0 1 5.66 0c2.16-1.46 3.11-1.16 3.11-1.16.61 1.57.23 2.73.11 3.02.72.79 1.16 1.8 1.16 3.04 0 4.35-2.64 5.31-5.16 5.59.4.35.76 1.03.76 2.09 0 1.51-.01 2.72-.01 3.09 0 .3.2.65.78.54A11.1 11.1 0 0 0 23.1 11.6C23.1 5.33 18.27.5 12 .5Z"/></svg>
-                                GitHub
-                            </a>
-                            <a class="btn" href="https://www.linkedin.com/in/marie-hesseberg-1a4900405/" target="_blank" rel="noopener noreferrer">
-                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.62 0 4.29 2.38 4.29 5.48v6.26ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
-                                LinkedIn
-                            </a>
-                            <a class="btn" href="mailto:marie.hesseberg@hotmail.com">
-                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.2.3 7.36 5.62a.7.7 0 0 0 .88 0L19.8 5.8a.6.6 0 0 0-.36-1.05H4.56a.6.6 0 0 0-.36 1.05Z"/></svg>
-                                Epost
-                            </a>
-                            <a class="btn" href="tel:+4790516090">
+                            <a class="btn" href="tel:+4747744434">
                                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.7 5.1 6.5 6.5l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1.1.5 1.1 1.1V20c0 .6-.5 1.1-1.1 1.1C10.6 21.1 2.9 13.4 2.9 3.9c0-.6.5-1.1 1.1-1.1h3.4c.6 0 1.1.5 1.1 1.1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8Z"/></svg>
                                 Telefon
                             </a>
@@ -103,7 +75,7 @@
 
                 <article class="medlem" id="joachim-flottorp">
                     <div class="medlem-bilde">
-                        <img src="https://placehold.co/300x300" alt="Profilbilde av Medlem 3">
+                        <img src="https://placehold.co/300x300" alt="Profilbilde av Joachim Flottorp">
                     </div>
                     <div class="medlem-info">
                         <h3>Joachim Flottorp</h3>
@@ -112,59 +84,12 @@
                             Jeg er bachelor student på Universitet i Agder og interessert i system utvikling, system arkitektur, DevOps, CI/CD, backend og frontend utvikling, med fokus på On-Prem programvarer, PHP og ASP.NET Core. 
                             Jeg er pålitelig, fokusert på arbeidet og er interresert i å prøve ut nye og revolusjonerende teknologi men samtidig utnytte det som er godt testet.
                         </p>
-                        <section class="portfolio">
-                            <h4>Portfolio</h4>
-                            <div class="portfolio-grid">
-                                <article class="prosjekt">
-                                    <div class="prosjekt-header">
-                                        <h5>Værsensor</h5>
-                                        <span class="status status-live">Live</span>
-                                    </div>
-                                    <p class="prosjekt-beskrivelse">Aggregere og vise Temperatur, Vind Hastighet, Fukt, Regn og Snø ifra diverse IoT-enheter på Ski-Stadiumer i Setesdal.</p>
-                                    <ul class="tech-stack">
-                                        <li>C#</li>
-                                        <li>ASP.NET Core</li>
-                                        <li>Linux</li>
-                                        <li>InfluxDB</li>
-                                        <li>React</li>
-                                        <li>Typescript</li>
-                                    </ul>
-                                    <div class="prosjekt-lenker">
-                                        <a class="btn btn-prov btn-prov--pulse" href="https://vaer.altidata.no" target="_blank" rel="noopener noreferrer">
-                                            Prøv selv
-                                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13.6m-5.6-6.5 6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                                        </a>
-                                    </div>
-                                </article>
-
-                                <article class="prosjekt">
-                                    <div class="prosjekt-header">
-                                        <h5>Kartverket</h5>
-                                    </div>
-                                    <p class="prosjekt-beskrivelse">Tillate innbygere og piloter å rapportere feil og mangel av informasjon på kartet som hindrer redningspiloter å fullføre sitt oppdrag.</p>
-                                    <ul class="tech-stack">
-                                        <li>C#</li>
-                                        <li>ASP.NET Core</li>
-                                        <li>Docker</li>
-                                        <li>MariaDB</li>
-                                        <li>React</li>
-                                        <li>Typescript</li>
-                                    </ul>
-                                    <div class="prosjekt-lenker">
-                                        <a class="btn" href="https://github.com/melon095/IS_202_GRUPPE_6_PROSJEKT" target="_blank" rel="noopener noreferrer">
-                                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.73.5.9 5.33.9 11.6c0 4.98 3.23 9.2 7.72 10.69.56.1.77-.24.77-.54 0-.27-.01-1.15-.02-2.09-3.14.68-3.8-1.35-3.8-1.35-.51-1.31-1.25-1.66-1.25-1.66-1.02-.7.08-.68.08-.68 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.39-1.22.71-1.5-2.51-.29-5.15-1.26-5.15-5.6 0-1.24.44-2.25 1.16-3.04-.12-.29-.5-1.45.11-3.02 0 0 .95-.3 3.11 1.16a10.8 10.8 0 0 1 5.66 0c2.16-1.46 3.11-1.16 3.11-1.16.61 1.57.23 2.73.11 3.02.72.79 1.16 1.8 1.16 3.04 0 4.35-2.64 5.31-5.16 5.59.4.35.76 1.03.76 2.09 0 1.51-.01 2.72-.01 3.09 0 .3.2.65.78.54A11.1 11.1 0 0 0 23.1 11.6C23.1 5.33 18.27.5 12 .5Z"/></svg>
-                                            GitHub
-                                        </a>
-                                    </div>
-                                </article>
-                            </div>
-                        </section>
                         <div class="medlem-lenker">
                             <a class="btn" href="https://github.com/melon095" target="_blank" rel="noopener noreferrer">
                                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.73.5.9 5.33.9 11.6c0 4.98 3.23 9.2 7.72 10.69.56.1.77-.24.77-.54 0-.27-.01-1.15-.02-2.09-3.14.68-3.8-1.35-3.8-1.35-.51-1.31-1.25-1.66-1.25-1.66-1.02-.7.08-.68.08-.68 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.39-1.22.71-1.5-2.51-.29-5.15-1.26-5.15-5.6 0-1.24.44-2.25 1.16-3.04-.12-.29-.5-1.45.11-3.02 0 0 .95-.3 3.11 1.16a10.8 10.8 0 0 1 5.66 0c2.16-1.46 3.11-1.16 3.11-1.16.61 1.57.23 2.73.11 3.02.72.79 1.16 1.8 1.16 3.04 0 4.35-2.64 5.31-5.16 5.59.4.35.76 1.03.76 2.09 0 1.51-.01 2.72-.01 3.09 0 .3.2.65.78.54A11.1 11.1 0 0 0 23.1 11.6C23.1 5.33 18.27.5 12 .5Z"/></svg>
                                 GitHub
                             </a>
-                            <a class="btn" href="https://melon095.no" target="_blank" rel="noopener noreferrer">
+                            <a class="btn" href="https://jflottorp.no" target="_blank" rel="noopener noreferrer">
                                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 2 10.5h2.5V21h5v-6.5h5V21h5V10.5H22L12 2Z"/></svg>
                                 Hjemmeside
                             </a>
@@ -186,41 +111,83 @@
 
                 <article class="medlem">
                     <div class="medlem-bilde">
-                        <img src="https://placehold.co/300x300" alt="Profilbilde av Medlem 4">
+                        <img src="https://placehold.co/300x300" alt="Profilbilde av Adrian Dorich-Bull">
                     </div>
+                
                     <div class="medlem-info">
-                        <h3>Medlem 4</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <h3>Adrian Dorich-Bull</h3>
+                
+                        <p>
+                            Mitt navn er Adrian Dorich-Bull, jeg er 22 år og kommer fra Oslo.
+                            Jeg går tredje året på bachelor i IT og informasjonssystemer ved
+                            Universitetet i Agder.
+                            <br><br>
+                
+                            Jeg har arbeidserfaring fra flere bransjer, blant annet lakseoppdrett,
+                            reke- og fiskemottak, dagligvarehandel og salg. Ved siden av studiene
+                            jobber jeg som assistent i hjemmesykepleien i Kristiansand.
+                            Erfaringen derfra har gjort meg spesielt interessert i hvordan teknologi
+                            kan bidra til å utvikle og forbedre fremtidens helse- og omsorgstjenester.
+                            <br><br>
+                
+                            Jeg er også aktiv i linjeforeningen Systematicus, hvor jeg tidligere
+                            har vært velferdsansvarlig og nå er økonomiansvarlig. På fritiden
+                            synger jeg i mannskoret Quantum ved UiA, trener Muay Thai og liker
+                            å være aktiv og tilbringe tid med venner.
+                        </p>
+                
                         <div class="medlem-lenker">
-                            <a class="btn" href="#" target="_blank" rel="noopener noreferrer">
-                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.73.5.9 5.33.9 11.6c0 4.98 3.23 9.2 7.72 10.69.56.1.77-.24.77-.54 0-.27-.01-1.15-.02-2.09-3.14.68-3.8-1.35-3.8-1.35-.51-1.31-1.25-1.66-1.25-1.66-1.02-.7.08-.68.08-.68 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.39-1.22.71-1.5-2.51-.29-5.15-1.26-5.15-5.6 0-1.24.44-2.25 1.16-3.04-.12-.29-.5-1.45.11-3.02 0 0 .95-.3 3.11 1.16a10.8 10.8 0 0 1 5.66 0c2.16-1.46 3.11-1.16 3.11-1.16.61 1.57.23 2.73.11 3.02.72.79 1.16 1.8 1.16 3.04 0 4.35-2.64 5.31-5.16 5.59.4.35.76 1.03.76 2.09 0 1.51-.01 2.72-.01 3.09 0 .3.2.65.78.54A11.1 11.1 0 0 0 23.1 11.6C23.1 5.33 18.27.5 12 .5Z"/></svg>
+                
+                            <a class="btn"
+                               href="https://github.com/Adrianddorich"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M12 .5C5.73.5.9 5.33.9 11.6c0 4.98 3.23 9.2 7.72 10.69.56.1.77-.24.77-.54 0-.27-.01-1.15-.02-2.09-3.14.68-3.8-1.35-3.8-1.35-.51-1.31-1.25-1.66-1.25-1.66-1.02-.7.08-.68.08-.68 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.39-1.22.71-1.5-2.51-.29-5.15-1.26-5.15-5.6 0-1.24.44-2.25 1.16-3.04-.12-.29-.5-1.45.11-3.02 0 0 .95-.3 3.11 1.16a10.8 10.8 0 0 1 5.66 0c2.16-1.46 3.11-1.16 3.11-1.16.61 1.57.23 2.73.11 3.02.72.79 1.16 1.8 1.16 3.04 0 4.35-2.64 5.31-5.16 5.59.4.35.76 1.03.76 2.09 0 1.51-.01 2.72-.01 3.09 0 .3.2.65.78.54A11.1 11.1 0 0 0 23.1 11.6C23.1 5.33 18.27.5 12 .5Z"/>
+                                </svg>
                                 GitHub
                             </a>
-                            <a class="btn" href="#" target="_blank" rel="noopener noreferrer">
-                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.62 0 4.29 2.38 4.29 5.48v6.26ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+                
+                            <a class="btn"
+                               href="https://www.linkedin.com/in/adrian-dorich-bull-6491713b7/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.62 0 4.29 2.38 4.29 5.48v6.26ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/>
+                                </svg>
                                 LinkedIn
                             </a>
-                            <a class="btn" href="mailto:medlem4@example.com">
-                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.2.3 7.36 5.62a.7.7 0 0 0 .88 0L19.8 5.8a.6.6 0 0 0-.36-1.05H4.56a.6.6 0 0 0-.36 1.05Z"/></svg>
+                
+                            <a class="btn" href="mailto:adriando@student.uia.no">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.2.3 7.36 5.62a.7.7 0 0 0 .88 0L19.8 5.8a.6.6 0 0 0-.36-1.05H4.56a.6.6 0 0 0-.36 1.05Z"/>
+                                </svg>
                                 Epost
                             </a>
-                            <a class="btn" href="tel:+4700000000">
-                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.7 5.1 6.5 6.5l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1.1.5 1.1 1.1V20c0 .6-.5 1.1-1.1 1.1C10.6 21.1 2.9 13.4 2.9 3.9c0-.6.5-1.1 1.1-1.1h3.4c.6 0 1.1.5 1.1 1.1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8Z"/></svg>
+                
+                            <a class="btn" href="tel:+4795303518">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M6.6 10.8c1.4 2.8 3.7 5.1 6.5 6.5l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1.1.5 1.1 1.1V20c0 .6-.5 1.1-1.1 1.1C10.6 21.1 2.9 13.4 2.9 3.9c0-.6.5-1.1 1.1-1.1h3.4c.6 0 1.1.5 1.1 1.1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8Z"/>
+                                </svg>
                                 Telefon
                             </a>
+                
                         </div>
                     </div>
                 </article>
 
                 <article class="medlem">
                     <div class="medlem-bilde">
-                        <img src="bildeHasan.jpg" alt="Profilbilde av Medlem 5">
+                        <img src="bilder/hasan.jpg" alt="Profilbilde av Hasan Cilenger">
                     </div>
                     <div class="medlem-info">
                         <h3>Hasan Cilenger</h3>
-                        <p>Jeg heter Hasan og er 32 år gammel. Jeg går nå på IT og informasjonssystemer ved Universitetet i Agder.
-
-Gjennom studiet har jeg prøvd ut litt forskjellige fagområder, men jeg merker at jeg trives aller best med frontend-utvikling. Jeg liker godt å jobbe med teknologi, lære nye ting og bruke det jeg allerede kan i praktiske prosjekter. Min sterkeste side er frontend, og jeg har erfaring med React og CSS, i tillegg til at jeg kan litt C#. Min rolle i gruppen blir derfor å ha et ekstra fokus på frontend-utviklingen og å bygge gode løsninger for prosjektet vårt.</p>
+                        <p>
+                            Jeg heter Hasan og er 32 år gammel. Jeg går nå på IT og informasjonssystemer ved Universitetet i Agder.
+                        </p>
+                        <p>
+                            Gjennom studiet har jeg prøvd ut litt forskjellige fagområder, men jeg merker at jeg trives aller best med frontend-utvikling. Jeg liker godt å jobbe med teknologi, lære nye ting og bruke det jeg allerede kan i praktiske prosjekter. Min sterkeste side er frontend, og jeg har erfaring med React og CSS, i tillegg til at jeg kan litt C#. Min rolle i gruppen blir derfor å ha et ekstra fokus på frontend-utviklingen og å bygge gode løsninger for prosjektet vårt.
+                        </p>
                         <div class="medlem-lenker">
                             <a class="btn" href="https://github.com/Hasan19945" target="_blank" rel="noopener noreferrer">
                                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.73.5.9 5.33.9 11.6c0 4.98 3.23 9.2 7.72 10.69.56.1.77-.24.77-.54 0-.27-.01-1.15-.02-2.09-3.14.68-3.8-1.35-3.8-1.35-.51-1.31-1.25-1.66-1.25-1.66-1.02-.7.08-.68.08-.68 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.39-1.22.71-1.5-2.51-.29-5.15-1.26-5.15-5.6 0-1.24.44-2.25 1.16-3.04-.12-.29-.5-1.45.11-3.02 0 0 .95-.3 3.11 1.16a10.8 10.8 0 0 1 5.66 0c2.16-1.46 3.11-1.16 3.11-1.16.61 1.57.23 2.73.11 3.02.72.79 1.16 1.8 1.16 3.04 0 4.35-2.64 5.31-5.16 5.59.4.35.76 1.03.76 2.09 0 1.51-.01 2.72-.01 3.09 0 .3.2.65.78.54A11.1 11.1 0 0 0 23.1 11.6C23.1 5.33 18.27.5 12 .5Z"/></svg>
@@ -230,7 +197,7 @@ Gjennom studiet har jeg prøvd ut litt forskjellige fagområder, men jeg merker 
                                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.62 0 4.29 2.38 4.29 5.48v6.26ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
                                 LinkedIn
                             </a>
-                            <a class="btn" href="hasancilenger1773@gmail.com">
+                            <a class="btn" href="mailto:hasancilenger1773@gmail.com">
                                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.2.3 7.36 5.62a.7.7 0 0 0 .88 0L19.8 5.8a.6.6 0 0 0-.36-1.05H4.56a.6.6 0 0 0-.36 1.05Z"/></svg>
                                 Epost
                             </a>
@@ -241,35 +208,16 @@ Gjennom studiet har jeg prøvd ut litt forskjellige fagområder, men jeg merker 
                         </div>
                     </div>
                 </article>
-
-                <article class="medlem">
-                    <div class="medlem-bilde">
-                        <img src="https://placehold.co/300x300" alt="Profilbilde av Medlem 6">
-                    </div>
-                    <div class="medlem-info">
-                        <h3>Medlem 6</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <div class="medlem-lenker">
-                            <a class="btn" href="#" target="_blank" rel="noopener noreferrer">
-                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.73.5.9 5.33.9 11.6c0 4.98 3.23 9.2 7.72 10.69.56.1.77-.24.77-.54 0-.27-.01-1.15-.02-2.09-3.14.68-3.8-1.35-3.8-1.35-.51-1.31-1.25-1.66-1.25-1.66-1.02-.7.08-.68.08-.68 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.39-1.22.71-1.5-2.51-.29-5.15-1.26-5.15-5.6 0-1.24.44-2.25 1.16-3.04-.12-.29-.5-1.45.11-3.02 0 0 .95-.3 3.11 1.16a10.8 10.8 0 0 1 5.66 0c2.16-1.46 3.11-1.16 3.11-1.16.61 1.57.23 2.73.11 3.02.72.79 1.16 1.8 1.16 3.04 0 4.35-2.64 5.31-5.16 5.59.4.35.76 1.03.76 2.09 0 1.51-.01 2.72-.01 3.09 0 .3.2.65.78.54A11.1 11.1 0 0 0 23.1 11.6C23.1 5.33 18.27.5 12 .5Z"/></svg>
-                                GitHub
-                            </a>
-                            <a class="btn" href="#" target="_blank" rel="noopener noreferrer">
-                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.62 0 4.29 2.38 4.29 5.48v6.26ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
-                                LinkedIn
-                            </a>
-                            <a class="btn" href="mailto:medlem6@example.com">
-                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.2.3 7.36 5.62a.7.7 0 0 0 .88 0L19.8 5.8a.6.6 0 0 0-.36-1.05H4.56a.6.6 0 0 0-.36 1.05Z"/></svg>
-                                Epost
-                            </a>
-                            <a class="btn" href="tel:+4700000000">
-                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.7 5.1 6.5 6.5l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1.1.5 1.1 1.1V20c0 .6-.5 1.1-1.1 1.1C10.6 21.1 2.9 13.4 2.9 3.9c0-.6.5-1.1 1.1-1.1h3.4c.6 0 1.1.5 1.1 1.1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8Z"/></svg>
-                                Telefon
-                            </a>
-                        </div>
-                    </div>
-                </article>
             </div>
+        </section>
+
+        <section class="ambisjon" id="ambisjon">
+            <h2>Ambisjonsnivå</h2>
+            <p>
+                Vi som gruppe er alle fra forskjellige steder i forskjellige aldere og med forskjellig erfaring som vi føler kan bidra til et mer fullstendig prosjektresultat, dette ser vi på som vår styrke. 
+                Vi har alle bygget lignende erfaringer gjennom de tidligere fire semesterene på IT og informasjonssystemer på UIA og vi er alle ute etter et best mulig sluttprodukt. 
+                For oss er god kommunikasjon og arbeidsfordeling viktig og vi skjønner ansvaret og alvoret i det at vi er på siste året og at produktet vi sitter igjen med ikke bare skal være en god Bachelor oppgave, men også skape en utvidet verdi til våre eksterne partnere.
+            </p>
         </section>
     </main>
 </body>
