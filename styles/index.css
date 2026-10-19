@@ -7,7 +7,7 @@
 	--border: #e6e6e6;
 	--shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
 	--shadow-hover: 0 10px 28px rgba(0, 0, 0, 0.1);
-	--radius: 0px;
+	--radius: 16px;
 }
 
 * {
@@ -267,13 +267,72 @@ h2::after {
 	text-align: center;
 }
 
-.ambisjon p {
-	margin: 2rem auto 0;
+.ambisjon > p {
+	margin: 3rem auto 0;
 	max-width: 720px;
 	text-align: left;
 	color: var(--text-muted);
 	font-size: 1rem;
 	line-height: 1.7;
+}
+
+.ambisjon-grid {
+	margin-top: 3rem;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1.5rem;
+}
+
+.ambisjon-kort {
+	padding: 2rem 1.5rem;
+	background: #ffffff;
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	box-shadow: var(--shadow);
+	transition:
+		box-shadow 0.25s ease,
+		transform 0.25s ease;
+}
+
+.ambisjon-kort:hover {
+	box-shadow: var(--shadow-hover);
+	transform: translateY(-4px);
+}
+
+.ambisjon-ikon {
+	width: 56px;
+	height: 56px;
+	margin: 0 auto 1.25rem;
+	display: grid;
+	place-items: center;
+	border-radius: 50%;
+	background: linear-gradient(135deg, var(--uia-red), #5c0d18);
+	box-shadow: 0 8px 18px rgba(166, 25, 46, 0.25);
+}
+
+.ambisjon-ikon svg {
+	width: 26px;
+	height: 26px;
+	fill: #ffffff;
+}
+
+.ambisjon-kort h3 {
+	margin: 0 0 0.6rem;
+	font-size: 1.15rem;
+	font-weight: 800;
+}
+
+.ambisjon-kort p {
+	margin: 0;
+	color: var(--text-muted);
+	font-size: 0.95rem;
+	line-height: 1.6;
+}
+
+@media (min-width: 760px) {
+	.ambisjon-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
 
 .medlemmer {
@@ -292,22 +351,36 @@ h2::after {
 }
 
 .medlem {
+	position: relative;
+	overflow: hidden;
 	display: grid;
-	grid-template-columns: 130px 1fr;
-	gap: 1.25rem;
-	padding: 1.5rem;
+	grid-template-columns: 150px 1fr;
+	gap: 1.75rem;
+	padding: 2rem 1.75rem 1.75rem;
 	background: #ffffff;
 	border: 1px solid var(--border);
 	border-radius: var(--radius);
 	box-shadow: var(--shadow);
 	transition:
-		box-shadow 0.2s ease,
-		transform 0.2s ease;
+		box-shadow 0.25s ease,
+		transform 0.25s ease,
+		border-color 0.25s ease;
+}
+
+.medlem::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 4px;
+	background: linear-gradient(90deg, var(--uia-red), #5c0d18);
 }
 
 .medlem:hover {
 	box-shadow: var(--shadow-hover);
-	transform: translateY(-2px);
+	border-color: rgba(166, 25, 46, 0.25);
+	transform: translateY(-4px);
 }
 
 .medlem-bilde img {
@@ -315,6 +388,7 @@ h2::after {
 	aspect-ratio: 1 / 1;
 	object-fit: cover;
 	border-radius: 12px;
+	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 	display: block;
 }
 
@@ -325,9 +399,10 @@ h2::after {
 }
 
 .medlem-info h3 {
-	margin: 0 0 0.4rem;
-	font-size: 1.15rem;
-	font-weight: 700;
+	margin: 0 0 0.75rem;
+	font-size: 1.3rem;
+	font-weight: 800;
+	letter-spacing: -0.01em;
 }
 
 .medlem-info p {
@@ -387,4 +462,18 @@ h2::after {
 	.medlem-lenker {
 		justify-content: center;
 	}
+}
+
+/* Scroll-animasjon: klassene settes av scripts/animasjon.js */
+.reveal {
+	opacity: 0;
+	transform: translateY(24px);
+	transition:
+		opacity 0.6s ease,
+		transform 0.6s ease;
+}
+
+.reveal.synlig {
+	opacity: 1;
+	transform: none;
 }
