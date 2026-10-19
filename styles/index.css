@@ -2,6 +2,7 @@
 	--uia-red: #a6192e;
 	--uia-red-dark: #7f1322;
 	--bg: #ffffff;
+	--bg-alt: #f6f4f3;
 	--text: #1f1f1f;
 	--text-muted: #595959;
 	--border: #e6e6e6;
@@ -340,6 +341,10 @@ h2::after {
 	margin: 0 auto;
 	padding: 4.5rem 1.5rem 5rem;
 	text-align: center;
+	/* Bakgrunnen strekkes ut til hele skjermbredden, selv om innholdet er maks 1120px */
+	background: var(--bg-alt);
+	box-shadow: 0 0 0 100vmax var(--bg-alt);
+	clip-path: inset(0 -100vmax);
 }
 
 .medlem-grid {
@@ -464,6 +469,20 @@ h2::after {
 	}
 }
 
+.bunntekst {
+	padding: 2rem 1.5rem;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.85);
+	background: linear-gradient(135deg, var(--uia-red), #5c0d18);
+}
+
+.bunntekst p {
+	margin: 0;
+	font-size: 0.95rem;
+	font-weight: 600;
+	letter-spacing: 0.02em;
+}
+
 /* "Til toppen"-knapp: vises av scripts/til-toppen.js */
 .til-toppen {
 	position: fixed;
@@ -475,7 +494,7 @@ h2::after {
 	display: grid;
 	place-items: center;
 	padding: 0;
-	border: 0;
+	border: 2px solid rgba(255, 255, 255, 0.7);
 	border-radius: 50%;
 	background: linear-gradient(135deg, var(--uia-red), #5c0d18);
 	box-shadow: 0 8px 20px rgba(166, 25, 46, 0.35);
